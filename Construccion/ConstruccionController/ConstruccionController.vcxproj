@@ -20,11 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{B3A61A30-B0ED-41B9-80F5-DAA4DB07CDCB}</ProjectGuid>
+    <ProjectGuid>{2D002013-37C8-4D89-97C8-1697DC70D4B5}</ProjectGuid>
     <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>ConstruccionModel</RootNamespace>
+    <RootNamespace>ConstruccionController</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -111,24 +111,6 @@
       <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Admin.h" />
-    <ClInclude Include="Comensal.h" />
-    <ClInclude Include="HistorialTransaccion.h" />
-    <ClInclude Include="MaquinaCompra.h" />
-    <ClInclude Include="MaquinaRecarga.h" />
-    <ClInclude Include="Tarjeta.h" />
-    <ClInclude Include="Usuario.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Admin.cpp" />
-    <ClCompile Include="Comensal.cpp" />
-    <ClCompile Include="HistorialTransaccion.cpp" />
-    <ClCompile Include="MaquinaCompra.cpp" />
-    <ClCompile Include="MaquinaRecarga.cpp" />
-    <ClCompile Include="Tarjeta.cpp" />
-    <ClCompile Include="Usuario.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

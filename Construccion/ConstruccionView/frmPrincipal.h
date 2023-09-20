@@ -70,8 +70,8 @@ namespace ConstruccionView {
 				this->recargaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->usuarioToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->platosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-				this->comensalToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->precioMenúToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+				this->comensalToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->menuStrip1->SuspendLayout();
 				this->SuspendLayout();
 				// 
@@ -102,13 +102,13 @@ namespace ConstruccionView {
 				// compraToolStripMenuItem
 				// 
 				this->compraToolStripMenuItem->Name = L"compraToolStripMenuItem";
-				this->compraToolStripMenuItem->Size = System::Drawing::Size(146, 26);
+				this->compraToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->compraToolStripMenuItem->Text = L"Compra";
 				// 
 				// recargaToolStripMenuItem
 				// 
 				this->recargaToolStripMenuItem->Name = L"recargaToolStripMenuItem";
-				this->recargaToolStripMenuItem->Size = System::Drawing::Size(146, 26);
+				this->recargaToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->recargaToolStripMenuItem->Text = L"Recarga";
 				// 
 				// usuarioToolStripMenuItem
@@ -130,17 +130,17 @@ namespace ConstruccionView {
 				this->platosToolStripMenuItem->Text = L"Platos";
 				this->platosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::platosToolStripMenuItem_Click);
 				// 
-				// comensalToolStripMenuItem
-				// 
-				this->comensalToolStripMenuItem->Name = L"comensalToolStripMenuItem";
-				this->comensalToolStripMenuItem->Size = System::Drawing::Size(224, 26);
-				this->comensalToolStripMenuItem->Text = L"Comensales";
-				// 
 				// precioMenúToolStripMenuItem
 				// 
 				this->precioMenúToolStripMenuItem->Name = L"precioMenúToolStripMenuItem";
 				this->precioMenúToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->precioMenúToolStripMenuItem->Text = L"Precio Menú";
+				// 
+				// comensalToolStripMenuItem
+				// 
+				this->comensalToolStripMenuItem->Name = L"comensalToolStripMenuItem";
+				this->comensalToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+				this->comensalToolStripMenuItem->Text = L"Comensales";
 				// 
 				// frmPrincipal
 				// 
@@ -168,8 +168,8 @@ namespace ConstruccionView {
 		}
 		private: System::Void platosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		mantPlatos^ ventanaPlatos = gcnew mantPlatos();
-		ventanaPlatos->MdiParent = this;
-		ventanaPlatos->Show();
+		//ventanaPlatos->MdiParent = this;
+		ventanaPlatos->ShowDialog();
 	}
 	};
 }

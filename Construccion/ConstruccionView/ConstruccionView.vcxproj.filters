@@ -30,6 +30,18 @@
     <ClCompile Include="mantAdmin.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="transCompra.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transConfimacion.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
@@ -45,6 +57,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mantAdmin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transCompra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transConfimacion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TEST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

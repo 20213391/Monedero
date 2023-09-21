@@ -1,4 +1,5 @@
 #include "frmPrincipal.h" 
+#include "login.h"
 
 
 using namespace System;
@@ -16,9 +17,10 @@ void main(array <String^>^ args) {
 
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	
+	login my_login;
 	frmPrincipal ventana; /*Estoy creando el objeto ventana que va a ser del tipo frmPrincipal*/
 
-	Application::Run(% ventana); /*Aqui estoy ejecutando la ventana inicial*/
+	Application::Run(% my_login);
+	Application::Run(% ventana); 
 
 }

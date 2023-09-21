@@ -122,14 +122,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="login.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mantAdmin.cpp" />
     <ClCompile Include="mantComensal.cpp" />
     <ClCompile Include="mantPlatos.cpp" />
     <ClCompile Include="mantPrecio.cpp" />
+    <ClCompile Include="TEST.cpp" />
+    <ClCompile Include="transCompra.cpp" />
+    <ClCompile Include="transConfimacion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="mantAdmin.h">
@@ -144,10 +151,22 @@
     <ClInclude Include="mantPrecio.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="TEST.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="transCompra.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="transConfimacion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantAdmin.resx">
       <DependentUpon>mantAdmin.h</DependentUpon>
@@ -157,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantPlatos.resx">
       <DependentUpon>mantPlatos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transConfimacion.resx">
+      <DependentUpon>transConfimacion.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

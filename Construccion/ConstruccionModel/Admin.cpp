@@ -1,5 +1,6 @@
 #include "Admin.h"
 
+using namespace ConstruccionModel;
 
 Admin::Admin() : Usuario() {
 

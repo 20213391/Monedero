@@ -1,5 +1,7 @@
 #include "HistorialTransaccion.h"
 
+using namespace ConstruccionModel;
+
 HistorialTransaccion::HistorialTransaccion() {
 
 }

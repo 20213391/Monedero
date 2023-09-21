@@ -21,12 +21,30 @@
     <ClCompile Include="mantPlatos.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="mantPrecio.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mantComensal.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mantAdmin.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mantPlatos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mantPrecio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mantComensal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mantAdmin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

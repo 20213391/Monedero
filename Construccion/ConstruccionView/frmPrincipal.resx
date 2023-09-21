@@ -124,7 +124,7 @@
   <data name="platosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
-        SwAAD0sBYWNNEQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADIiSURBVHhe7d0J
+        SQAAD0kBHp2OmAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADIiSURBVHhe7d0J
         2CRVefbxAWZg2IRh2IIKCKKooCKbCIqguIAalw/ExDUkGiViQKPGDbe4C5pPE9EYIa7RGI1K4pa4oyZK
         XNC4onEDFxSMoizR3I9TPR7O3O/7dned6q46/b+v63fFPPRbp7qn+5zq6qpzVv36178GAAALxhYBAEDd
         bBEAANTNFgEAQN1sEQAA1M0WAQBA3WwRAADUzRYBAEDdbBEAANTNFgEAQN1sEQAA1M0WAQBA3WwRAADU
@@ -342,4 +342,7 @@
         RK5CYII=
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>53</value>
+  </metadata>
 </root>

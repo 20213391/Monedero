@@ -1,5 +1,6 @@
 #include "Comensal.h"
 
+using namespace ConstruccionModel;
 
 Comensal::Comensal() : Usuario() {
 

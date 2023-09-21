@@ -1,5 +1,6 @@
 #pragma once
 #include "mantPlatos.h"
+#include "mantPrecio.h"
 
 namespace ConstruccionView {
 
@@ -44,6 +45,7 @@ namespace ConstruccionView {
 		private: System::Windows::Forms::ToolStripMenuItem^ comensalToolStripMenuItem;
 		private: System::Windows::Forms::ToolStripMenuItem^ platosToolStripMenuItem;
 		private: System::Windows::Forms::ToolStripMenuItem^ precioMenúToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ administradoresToolStripMenuItem;
 
 		protected:
 
@@ -72,6 +74,7 @@ namespace ConstruccionView {
 				this->platosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->precioMenúToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->comensalToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+				this->administradoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 				this->menuStrip1->SuspendLayout();
 				this->SuspendLayout();
 				// 
@@ -84,7 +87,7 @@ namespace ConstruccionView {
 				});
 				this->menuStrip1->Location = System::Drawing::Point(0, 0);
 				this->menuStrip1->Name = L"menuStrip1";
-				this->menuStrip1->Size = System::Drawing::Size(802, 28);
+				this->menuStrip1->Size = System::Drawing::Size(853, 28);
 				this->menuStrip1->TabIndex = 0;
 				this->menuStrip1->Text = L"menuStrip1";
 				// 
@@ -113,9 +116,9 @@ namespace ConstruccionView {
 				// 
 				// usuarioToolStripMenuItem
 				// 
-				this->usuarioToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->usuarioToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 					this->platosToolStripMenuItem,
-						this->precioMenúToolStripMenuItem, this->comensalToolStripMenuItem
+						this->precioMenúToolStripMenuItem, this->comensalToolStripMenuItem, this->administradoresToolStripMenuItem
 				});
 				this->usuarioToolStripMenuItem->Name = L"usuarioToolStripMenuItem";
 				this->usuarioToolStripMenuItem->Size = System::Drawing::Size(124, 24);
@@ -135,6 +138,7 @@ namespace ConstruccionView {
 				this->precioMenúToolStripMenuItem->Name = L"precioMenúToolStripMenuItem";
 				this->precioMenúToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->precioMenúToolStripMenuItem->Text = L"Precio Menú";
+				this->precioMenúToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::precioMenúToolStripMenuItem_Click);
 				// 
 				// comensalToolStripMenuItem
 				// 
@@ -142,11 +146,17 @@ namespace ConstruccionView {
 				this->comensalToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->comensalToolStripMenuItem->Text = L"Comensales";
 				// 
+				// administradoresToolStripMenuItem
+				// 
+				this->administradoresToolStripMenuItem->Name = L"administradoresToolStripMenuItem";
+				this->administradoresToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+				this->administradoresToolStripMenuItem->Text = L"Administradores";
+				// 
 				// frmPrincipal
 				// 
 				this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-				this->ClientSize = System::Drawing::Size(802, 457);
+				this->ClientSize = System::Drawing::Size(853, 460);
 				this->Controls->Add(this->menuStrip1);
 				this->IsMdiContainer = true;
 				this->MainMenuStrip = this->menuStrip1;
@@ -171,5 +181,9 @@ namespace ConstruccionView {
 		//ventanaPlatos->MdiParent = this;
 		ventanaPlatos->ShowDialog();
 	}
-	};
+	private: System::Void precioMenúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		mantPrecio^ ventanaPrecio = gcnew mantPrecio();
+		ventanaPrecio->ShowDialog();
+	}
+};
 }

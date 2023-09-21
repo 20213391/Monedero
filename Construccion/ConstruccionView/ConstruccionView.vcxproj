@@ -123,19 +123,34 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mantAdmin.cpp" />
+    <ClCompile Include="mantComensal.cpp" />
     <ClCompile Include="mantPlatos.cpp" />
+    <ClCompile Include="mantPrecio.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="mantAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="mantComensal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="mantPlatos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="mantPrecio.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantComensal.resx">
+      <DependentUpon>mantComensal.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantPlatos.resx">
       <DependentUpon>mantPlatos.h</DependentUpon>

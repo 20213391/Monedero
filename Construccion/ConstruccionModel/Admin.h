@@ -3,20 +3,24 @@
 
 using namespace System;
 
-public ref class Admin : Usuario {
-	/*Si es que hay herencia, se representa de la sig forma:
-	public ref class Ususario : Persona
-	*/
+namespace ConstruccionModel {
 
-	/*definimos los atributos*/
-private:
+	public ref class Admin : Usuario {
+		/*Si es que hay herencia, se representa de la sig forma:
+		public ref class Ususario : Persona
+		*/
 
-	String^ UsuarioAdmin;
-	String^ PswdAdmin;
+		/*definimos los atributos*/
+	private:
 
-public:
+		String^ UsuarioAdmin;
+		String^ PswdAdmin;
 
-	Admin();
-	Admin(String^ UsuarioAdmin, String^ PswdAdmin);
+	public:
 
-};
+		Admin();
+		Admin(String^ UsuarioAdmin, String^ PswdAdmin);
+
+	};
+
+}

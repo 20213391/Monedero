@@ -2,16 +2,20 @@
 
 using namespace System;
 
-public ref class Tarjeta {
+namespace ConstruccionModel {
 
-private:
-	String^ FechaAlta;
-	String^ FechaBaja;
-	int Estado;
-	Usuario^ objUsuario;
+	public ref class Tarjeta {
 
-public:
-	Tarjeta();
-	Tarjeta(String^ FechaAlta, String^ FechaBaja, int Estado, Usuario^ objUsuario);
-	
-};
+	private:
+		String^ FechaAlta;
+		String^ FechaBaja;
+		int Estado;
+		Usuario^ objUsuario;
+
+	public:
+		Tarjeta();
+		Tarjeta(String^ FechaAlta, String^ FechaBaja, int Estado, Usuario^ objUsuario);
+
+	};
+
+}

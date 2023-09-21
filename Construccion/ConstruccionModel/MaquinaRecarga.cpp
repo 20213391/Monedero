@@ -1,5 +1,7 @@
 #include "MaquinaRecarga.h"
 
+using namespace ConstruccionModel;
+
 MaquinaRecarga::MaquinaRecarga() {
 
 }

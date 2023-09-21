@@ -5,20 +5,24 @@
 
 using namespace System;
 
-public ref class HistorialTransaccion {
+namespace ConstruccionModel {
 
-private:
-	int codigo;
-	String^ fecha;
-	double valor;
-	String^ UsuarioAsociado;
-	String^ IDMaquina;
-	Usuario^ objUsuario;
-	MaquinaCompra^ objMaquinaCompra;
-	MaquinaRecarga^ objMaquinaRecarga;
+	public ref class HistorialTransaccion {
 
-public:
-	HistorialTransaccion();
-	HistorialTransaccion(int codigo, String^ fecha, double valor, String^ UsuarioAsociado, String^ IDMaquina, Usuario^ objUsuario, MaquinaCompra^ objMaquinaCompra, MaquinaRecarga^ objMaquinaRecarga);
+	private:
+		int codigo;
+		String^ fecha;
+		double valor;
+		String^ UsuarioAsociado;
+		String^ IDMaquina;
+		Usuario^ objUsuario;
+		MaquinaCompra^ objMaquinaCompra;
+		MaquinaRecarga^ objMaquinaRecarga;
 
-};
+	public:
+		HistorialTransaccion();
+		HistorialTransaccion(int codigo, String^ fecha, double valor, String^ UsuarioAsociado, String^ IDMaquina, Usuario^ objUsuario, MaquinaCompra^ objMaquinaCompra, MaquinaRecarga^ objMaquinaRecarga);
+
+	};
+
+}

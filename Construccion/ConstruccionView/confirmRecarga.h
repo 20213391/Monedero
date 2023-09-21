@@ -10,12 +10,12 @@ namespace ConstruccionView {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Resumen de transCompra
+	/// Resumen de confirmRecarga
 	/// </summary>
-	public ref class transCompra : public System::Windows::Forms::Form
+	public ref class confirmRecarga : public System::Windows::Forms::Form
 	{
 	public:
-		transCompra(void)
+		confirmRecarga(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace ConstruccionView {
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
 		/// </summary>
-		~transCompra()
+		~confirmRecarga()
 		{
 			if (components)
 			{
@@ -48,21 +48,12 @@ namespace ConstruccionView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->SuspendLayout();
-			// 
-			// transCompra
-			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->components = gcnew System::ComponentModel::Container();
+			this->Size = System::Drawing::Size(300,300);
+			this->Text = L"confirmRecarga";
+			this->Padding = System::Windows::Forms::Padding(0);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(282, 253);
-			this->Name = L"transCompra";
-			this->Text = L"transCompra";
-			this->Load += gcnew System::EventHandler(this, &transCompra::transCompra_Load);
-			this->ResumeLayout(false);
-
 		}
 #pragma endregion
-	private: System::Void transCompra_Load(System::Object^ sender, System::EventArgs^ e) {
-	}
 	};
 }

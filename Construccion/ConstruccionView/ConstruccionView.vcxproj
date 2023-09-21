@@ -122,6 +122,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="confirmRecarga.cpp" />
     <ClCompile Include="login.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mantAdmin.cpp" />
@@ -129,10 +130,12 @@
     <ClCompile Include="mantPlatos.cpp" />
     <ClCompile Include="mantPrecio.cpp" />
     <ClCompile Include="TEST.cpp" />
-    <ClCompile Include="transCompra.cpp" />
     <ClCompile Include="transConfimacion.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="confirmRecarga.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -154,9 +157,6 @@
     <ClInclude Include="TEST.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="transCompra.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="transConfimacion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -176,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantPlatos.resx">
       <DependentUpon>mantPlatos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantPrecio.resx">
+      <DependentUpon>mantPrecio.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="transConfimacion.resx">
       <DependentUpon>transConfimacion.h</DependentUpon>

@@ -3,7 +3,7 @@
 
 using namespace System;
 
-public ref class Admin : Usuario {
+public ref class Comensal : Usuario {
 	/*Si es que hay herencia, se representa de la sig forma:
 	public ref class Ususario : Persona
 	*/
@@ -16,7 +16,7 @@ private:
 
 public:
 
-	Admin();
-	Admin(String^ UsuarioComensal, String^ PswdComensal);
+	Comensal();
+	Comensal(String^ UsuarioComensal, String^ PswdComensal);
 
 };

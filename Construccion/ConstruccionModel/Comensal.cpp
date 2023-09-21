@@ -1,10 +1,10 @@
 #include "Comensal.h"
 
 
-Admin::Admin() : Usuario() {
+Comensal::Comensal() : Usuario() {
 
 }
-Admin::Admin(String^ UsuarioComensal, String^ PswdComensal) {
+Comensal::Comensal(String^ UsuarioComensal, String^ PswdComensal) {
 	this->UsuarioComensal = UsuarioComensal;
 	this->PswdComensal = PswdComensal;
 }

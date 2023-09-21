@@ -53,6 +53,17 @@ namespace ConstruccionView {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::TextBox^ textBox5;
 	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+
+
+
+
+
+
+
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
@@ -60,6 +71,8 @@ namespace ConstruccionView {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column5;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column6;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column7;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column8;
 
 
 	protected:
@@ -93,6 +106,10 @@ namespace ConstruccionView {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -100,12 +117,18 @@ namespace ConstruccionView {
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->textBox6);
+			this->groupBox1->Controls->Add(this->textBox7);
+			this->groupBox1->Controls->Add(this->label1);
+			this->groupBox1->Controls->Add(this->label8);
 			this->groupBox1->Controls->Add(this->dateTimePicker1);
 			this->groupBox1->Controls->Add(this->button3);
 			this->groupBox1->Controls->Add(this->button2);
@@ -121,18 +144,18 @@ namespace ConstruccionView {
 			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Controls->Add(this->label3);
 			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Location = System::Drawing::Point(25, 27);
+			this->groupBox1->Location = System::Drawing::Point(12, 12);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(690, 287);
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Personas";
+			this->groupBox1->Text = L"Comensales";
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &mantComensal::groupBox1_Enter);
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(41, 47);
+			this->label2->Location = System::Drawing::Point(26, 47);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(30, 16);
 			this->label2->TabIndex = 1;
@@ -142,7 +165,7 @@ namespace ConstruccionView {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(41, 92);
+			this->label3->Location = System::Drawing::Point(26, 92);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(56, 16);
 			this->label3->TabIndex = 2;
@@ -150,7 +173,7 @@ namespace ConstruccionView {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(195, 44);
+			this->textBox2->Location = System::Drawing::Point(180, 44);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(100, 22);
 			this->textBox2->TabIndex = 4;
@@ -158,7 +181,7 @@ namespace ConstruccionView {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(413, 49);
+			this->label4->Location = System::Drawing::Point(416, 47);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(107, 16);
 			this->label4->TabIndex = 5;
@@ -167,7 +190,7 @@ namespace ConstruccionView {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(413, 93);
+			this->label5->Location = System::Drawing::Point(416, 91);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(109, 16);
 			this->label5->TabIndex = 6;
@@ -176,7 +199,7 @@ namespace ConstruccionView {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(41, 137);
+			this->label6->Location = System::Drawing::Point(26, 137);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(135, 16);
 			this->label6->TabIndex = 7;
@@ -185,7 +208,7 @@ namespace ConstruccionView {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(41, 182);
+			this->label7->Location = System::Drawing::Point(26, 182);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(119, 16);
 			this->label7->TabIndex = 8;
@@ -193,28 +216,28 @@ namespace ConstruccionView {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(195, 89);
+			this->textBox1->Location = System::Drawing::Point(180, 89);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 22);
 			this->textBox1->TabIndex = 9;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(554, 47);
+			this->textBox3->Location = System::Drawing::Point(557, 45);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(100, 22);
 			this->textBox3->TabIndex = 10;
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(554, 93);
+			this->textBox4->Location = System::Drawing::Point(557, 90);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(100, 22);
 			this->textBox4->TabIndex = 11;
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(195, 179);
+			this->textBox5->Location = System::Drawing::Point(180, 179);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(100, 22);
 			this->textBox5->TabIndex = 15;
@@ -248,25 +271,57 @@ namespace ConstruccionView {
 			// 
 			// dateTimePicker1
 			// 
-			this->dateTimePicker1->Location = System::Drawing::Point(195, 134);
+			this->dateTimePicker1->Location = System::Drawing::Point(180, 134);
 			this->dateTimePicker1->Name = L"dateTimePicker1";
 			this->dateTimePicker1->Size = System::Drawing::Size(195, 22);
 			this->dateTimePicker1->TabIndex = 1;
 			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(557, 180);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(100, 22);
+			this->textBox6->TabIndex = 22;
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(557, 135);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(100, 22);
+			this->textBox7->TabIndex = 21;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(416, 179);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(76, 16);
+			this->label1->TabIndex = 20;
+			this->label1->Text = L"Contraseña";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(416, 135);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(54, 16);
+			this->label8->TabIndex = 19;
+			this->label8->Text = L"Usuario";
+			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->AllowUserToOrderColumns = true;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(6) {
+			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(8) {
 				this->Column1,
-					this->Column2, this->Column3, this->Column4, this->Column5, this->Column6
+					this->Column2, this->Column3, this->Column4, this->Column5, this->Column6, this->Column7, this->Column8
 			});
-			this->dataGridView1->Location = System::Drawing::Point(25, 333);
+			this->dataGridView1->Location = System::Drawing::Point(12, 324);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 10;
 			this->dataGridView1->RowTemplate->Height = 24;
 			this->dataGridView1->Size = System::Drawing::Size(690, 174);
-			this->dataGridView1->TabIndex = 1;
-			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &mantComensal::dataGridView1_CellContentClick);
+			this->dataGridView1->TabIndex = 23;
 			// 
 			// Column1
 			// 
@@ -310,11 +365,25 @@ namespace ConstruccionView {
 			this->Column6->Name = L"Column6";
 			this->Column6->Width = 125;
 			// 
+			// Column7
+			// 
+			this->Column7->HeaderText = L"Usuario";
+			this->Column7->MinimumWidth = 6;
+			this->Column7->Name = L"Column7";
+			this->Column7->Width = 125;
+			// 
+			// Column8
+			// 
+			this->Column8->HeaderText = L"Contraseña";
+			this->Column8->MinimumWidth = 6;
+			this->Column8->Name = L"Column8";
+			this->Column8->Width = 125;
+			// 
 			// mantComensal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(737, 531);
+			this->ClientSize = System::Drawing::Size(723, 510);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"mantComensal";

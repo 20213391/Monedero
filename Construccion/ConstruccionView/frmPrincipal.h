@@ -1,6 +1,9 @@
 #pragma once
+
 #include "mantPlatos.h"
 #include "mantPrecio.h"
+#include "mantComensal.h"
+#include "mantAdmin.h"
 
 namespace ConstruccionView {
 
@@ -105,13 +108,13 @@ namespace ConstruccionView {
 				// compraToolStripMenuItem
 				// 
 				this->compraToolStripMenuItem->Name = L"compraToolStripMenuItem";
-				this->compraToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+				this->compraToolStripMenuItem->Size = System::Drawing::Size(146, 26);
 				this->compraToolStripMenuItem->Text = L"Compra";
 				// 
 				// recargaToolStripMenuItem
 				// 
 				this->recargaToolStripMenuItem->Name = L"recargaToolStripMenuItem";
-				this->recargaToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+				this->recargaToolStripMenuItem->Size = System::Drawing::Size(146, 26);
 				this->recargaToolStripMenuItem->Text = L"Recarga";
 				// 
 				// usuarioToolStripMenuItem
@@ -145,12 +148,14 @@ namespace ConstruccionView {
 				this->comensalToolStripMenuItem->Name = L"comensalToolStripMenuItem";
 				this->comensalToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->comensalToolStripMenuItem->Text = L"Comensales";
+				this->comensalToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::comensalToolStripMenuItem_Click);
 				// 
 				// administradoresToolStripMenuItem
 				// 
 				this->administradoresToolStripMenuItem->Name = L"administradoresToolStripMenuItem";
 				this->administradoresToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 				this->administradoresToolStripMenuItem->Text = L"Administradores";
+				this->administradoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::administradoresToolStripMenuItem_Click);
 				// 
 				// frmPrincipal
 				// 
@@ -170,20 +175,28 @@ namespace ConstruccionView {
 
 			}
 	#pragma endregion
-		private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
-		}
-		private: System::Void menúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		}
-		private: System::Void usuarioToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		}
-		private: System::Void platosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		mantPlatos^ ventanaPlatos = gcnew mantPlatos();
-		//ventanaPlatos->MdiParent = this;
-		ventanaPlatos->ShowDialog();
+private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void precioMenúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		mantPrecio^ ventanaPrecio = gcnew mantPrecio();
-		ventanaPrecio->ShowDialog();
-	}
+private: System::Void menúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void usuarioToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void platosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	mantPlatos^ ventanaPlatos = gcnew mantPlatos();
+	//ventanaPlatos->MdiParent = this;
+	ventanaPlatos->ShowDialog();
+}
+private: System::Void precioMenúToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	mantPrecio^ ventanaPrecio = gcnew mantPrecio();
+	ventanaPrecio->ShowDialog();
+}
+private: System::Void comensalToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	mantComensal^ ventanaComensal = gcnew mantComensal();
+	ventanaComensal->ShowDialog();
+}
+private: System::Void administradoresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	mantAdmin^ ventanaAdmin = gcnew mantAdmin();
+	ventanaAdmin->ShowDialog();
+}
 };
 }

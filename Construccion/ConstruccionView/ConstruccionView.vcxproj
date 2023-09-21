@@ -149,6 +149,9 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mantAdmin.resx">
+      <DependentUpon>mantAdmin.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantComensal.resx">
       <DependentUpon>mantComensal.h</DependentUpon>
     </EmbeddedResource>

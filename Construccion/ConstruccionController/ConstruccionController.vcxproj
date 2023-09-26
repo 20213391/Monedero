@@ -18,6 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlatoController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlatoController.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <ProjectGuid>{2D002013-37C8-4D89-97C8-1697DC70D4B5}</ProjectGuid>

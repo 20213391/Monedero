@@ -10,7 +10,7 @@ namespace ConstruccionModel {
 		String^ FechaAlta;
 		String^ FechaBaja;
 		int Estado;
-		Usuario^ objUsuario;
+		Usuario objUsuario;
 
 	public:
 		Tarjeta();

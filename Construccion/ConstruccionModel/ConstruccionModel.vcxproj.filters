@@ -33,7 +33,7 @@
     <ClInclude Include="HistorialTransaccion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Tarjeta.h">
+    <ClInclude Include="Plato.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,7 +56,7 @@
     <ClCompile Include="HistorialTransaccion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tarjeta.cpp">
+    <ClCompile Include="Plato.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

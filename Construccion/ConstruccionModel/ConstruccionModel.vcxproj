@@ -117,7 +117,7 @@
     <ClInclude Include="HistorialTransaccion.h" />
     <ClInclude Include="MaquinaCompra.h" />
     <ClInclude Include="MaquinaRecarga.h" />
-    <ClInclude Include="Tarjeta.h" />
+    <ClInclude Include="Plato.h" />
     <ClInclude Include="Usuario.h" />
   </ItemGroup>
   <ItemGroup>
@@ -126,7 +126,7 @@
     <ClCompile Include="HistorialTransaccion.cpp" />
     <ClCompile Include="MaquinaCompra.cpp" />
     <ClCompile Include="MaquinaRecarga.cpp" />
-    <ClCompile Include="Tarjeta.cpp" />
+    <ClCompile Include="Plato.cpp" />
     <ClCompile Include="Usuario.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

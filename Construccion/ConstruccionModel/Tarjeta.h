@@ -1,4 +1,5 @@
 #pragma once
+#include "Usuario.h"
 
 using namespace System;
 

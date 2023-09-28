@@ -1,5 +1,4 @@
 #include "Tarjeta.h"
-#include "Usuario.h"
 
 using namespace ConstruccionModel;
 

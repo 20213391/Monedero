@@ -1,0 +1,4 @@
+D:\2023-2\LPOO\MonederoFinal\SistemaMonederoController\x64\Debug\SistemaMonederoController.vcxproj.AssemblyReference.cache
+D:\2023-2\LPOO\MonederoFinal\SistemaMonederoController\x64\Debug\SistemaMonederoController.vcxproj.CopyComplete
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoController\x64\Debug\SistemaMonederoController.vcxproj.AssemblyReference.cache
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoController\x64\Debug\SistemaMonederoController.vcxproj.CopyComplete

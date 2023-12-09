@@ -1,0 +1,15 @@
+﻿  Administrador.cpp
+  Comensal.cpp
+  HistorialTransaccion.cpp
+  Maquina.cpp
+  MaquinaCompra.cpp
+  MaquinaRecarga.cpp
+  nombrePlato.cpp
+  Plato.cpp
+  Tarjeta.cpp
+  Ubicacion.cpp
+  Usuario.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+  Administrador.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  SistemaMonederoModel.vcxproj -> C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\x64\Debug\SistemaMonederoModel.dll

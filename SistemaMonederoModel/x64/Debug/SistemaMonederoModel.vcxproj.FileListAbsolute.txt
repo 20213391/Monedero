@@ -1,0 +1,2 @@
+D:\2023-2\LPOO\MonederoFinal\SistemaMonederoModel\x64\Debug\SistemaMonederoModel.vcxproj.AssemblyReference.cache
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoModel\x64\Debug\SistemaMonederoModel.vcxproj.AssemblyReference.cache

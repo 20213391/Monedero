@@ -1,0 +1,7 @@
+﻿  PlatoController.cpp
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoController\PlatoController.cpp(52,23): warning C4101: 'ex': unreferenced local variable
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoController\PlatoController.cpp(73,25): warning C4101: 'ex': unreferenced local variable
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoController\PlatoController.cpp(93,23): warning C4101: 'ex': unreferenced local variable
+C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\SistemaMonederoController\PlatoController.cpp(163,23): warning C4101: 'ex': unreferenced local variable
+  MaquinaController.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  SistemaMonederoController.vcxproj -> C:\Valerie\PreG\Ciclo_2023-2\LPOO\Proyecto\MonederoFinal\x64\Debug\SistemaMonederoController.dll
